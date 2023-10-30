@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\ICategoriaService.cs" />
+    <Compile Remove="Interfaces\IFornecedorService.cs" />
+    <Compile Remove="Services\CategoriaService.cs" />
+    <Compile Remove="Services\FornecedorService.cs" />
+    <Compile Remove="ViewModels\CategoriaViewModel.cs" />
+    <Compile Remove="ViewModels\FornecedorViewModel.cs" />
+    <Compile Remove="ViewModels\NovaCategoriaViewModel.cs" />
+    <Compile Remove="ViewModels\NovoFornecedorViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\H1Store.Catalogo.Domain\H1Store.Catalogo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
